@@ -1,0 +1,17 @@
+org\klishin\telegram\informatics\project\telegram\commands\service\ServiceCommand$1.class
+org\klishin\telegram\informatics\project\telegram\Bot.class
+org\klishin\telegram\informatics\project\telegram\commands\service\EnglishWordCommand.class
+org\klishin\telegram\informatics\project\Utils.class
+org\klishin\telegram\informatics\project\telegram\enums\OperationEnum.class
+org\klishin\telegram\informatics\project\telegram\nonCommand\model\QuestionAnswer$QuestionAnswerBuilder.class
+org\klishin\telegram\informatics\project\telegram\nonCommand\model\Dictionary$DictionaryBuilder.class
+org\klishin\telegram\informatics\project\telegram\nonCommand\model\QuestionAnswer.class
+org\klishin\telegram\informatics\project\telegram\nonCommand\NonCommand.class
+org\klishin\telegram\informatics\project\telegram\commands\service\TestCommand.class
+org\klishin\telegram\informatics\project\InformaticsProjectApplication.class
+org\klishin\telegram\informatics\project\telegram\commands\service\HelpCommand.class
+org\klishin\telegram\informatics\project\telegram\nonCommand\model\Dictionary.class
+org\klishin\telegram\informatics\project\telegram\commands\service\RussianWordCommand.class
+org\klishin\telegram\informatics\project\telegram\commands\service\StartCommand.class
+org\klishin\telegram\informatics\project\telegram\commands\service\AllWordCommand.class
+org\klishin\telegram\informatics\project\telegram\commands\service\ServiceCommand.class

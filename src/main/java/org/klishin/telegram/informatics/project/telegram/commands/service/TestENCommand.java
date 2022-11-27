@@ -17,10 +17,10 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-public class TestCommand extends ServiceCommand {
+public class TestENCommand extends ServiceCommand {
     private Logger logger = LoggerFactory.getLogger(EnglishWordCommand.class);
 
-    public TestCommand(String identifier, String description) {
+    public TestENCommand(String identifier, String description) {
         super(identifier, description);
     }
 
@@ -30,7 +30,7 @@ public class TestCommand extends ServiceCommand {
 
         logger.debug(String.format("Пользователь %s. Начато выполнение команды %s", userName,
                 this.getCommandIdentifier()));
-        sendAnswerTest(absSender, chat.getId(), OperationEnum.TEST, this.getDescription(),
+        sendAnswerTest(absSender, chat.getId(), OperationEnum.TEST_EN, this.getDescription(),
                 this.getCommandIdentifier(), userName);
         //Тест
         for (Dictionary dict : Bot.getDictionaries()) {

@@ -34,17 +34,17 @@ public class TestRUCommand extends ServiceCommand {
                 this.getCommandIdentifier(), userName);
         //Тест
         for (Dictionary dict : Bot.getDictionaries()) {
-            String answer1 = randomAnswer(List.of(dict.getRussian()));
-            String answer2 = randomAnswer(List.of(dict.getRussian(), answer1));
+            String answer1 = randomAnswer(List.of(dict.getEnglish()));
+            String answer2 = randomAnswer(List.of(dict.getEnglish(), answer1));
             List<String> answer = new ArrayList<>();
-            answer.add(dict.getRussian());
+            answer.add(dict.getEnglish());
             answer.add(answer1);
             answer.add(answer2);
             Collections.shuffle(answer);
             QuestionAnswer qa = QuestionAnswer.builder()
-                    .wold(dict.getEnglish())
+                    .wold(dict.getRussian())
                     .answer(answer)
-                    .answerTrue(dict.getRussian())
+                    .answerTrue(dict.getEnglish())
                     .build();
             List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
             String answerTrue = qa.getAnswerTrue();
@@ -65,10 +65,10 @@ public class TestRUCommand extends ServiceCommand {
     private String randomAnswer(List<String> stringList) {
         Random random = new Random();
         int index = random.nextInt(Bot.getDictionaries().size());
-        String answer = Bot.getDictionaries().get(index).getRussian();
+        String answer = Bot.getDictionaries().get(index).getEnglish();
         boolean retry = false;
         for (String str : stringList) {
-            if (str.equals(Bot.getDictionaries().get(index).getRussian())) {
+            if (str.equals(Bot.getDictionaries().get(index).getEnglish())) {
                 retry = true;
             }
         }

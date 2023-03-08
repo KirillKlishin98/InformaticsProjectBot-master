@@ -1,21 +1,17 @@
 package org.klishin.telegram.informatics.project.telegram.commands.service;
 
-import lombok.NonNull;
 import org.klishin.telegram.informatics.project.telegram.Bot;
 import org.klishin.telegram.informatics.project.telegram.enums.OperationEnum;
 import org.klishin.telegram.informatics.project.telegram.nonCommand.model.Dictionary;
-import org.klishin.telegram.informatics.project.telegram.nonCommand.model.QuestionAnswer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.telegram.telegrambots.extensions.bots.commandbot.commands.BotCommand;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup;
-import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboard;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardButton;
 import org.telegram.telegrambots.meta.bots.AbsSender;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
-import java.util.ArrayList;
 import java.util.List;
 
 abstract class ServiceCommand extends BotCommand {
@@ -75,8 +71,8 @@ abstract class ServiceCommand extends BotCommand {
                         " /allword - Вывод всех слов с переводом;\n" +
                         " /englishword - Вывод всех английских слов;\n" +
                         " /russianword - Вывод всех руских слов;\n" +
-                        " /testen - Старт теста (ru-en);\n" +
-                        " /testru - Старт теста (en->ru);\n" +
+                        " /testen - Старт теста (en->ru);\n" +
+                        " /testru - Старт теста (ru-en);\n" +
                         "/help - помощь\n\n" +
                         "\n";
                 break;
